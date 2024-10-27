@@ -1,0 +1,13 @@
+<div *ngFor="let info of data" class="card">
+    <h3>{{info.title}}</h3>
+    <img class="img" src={{info.photoFile}} alt="Image" />
+    <div class="genresAndReleaseDateDiv">
+        <div class="genres">
+            <span *ngFor="let genre of info.genres" class="genre">{{genre}}</span>
+        </div>
+        <span class="releaseDate">{{info.releaseDate}}</span>
+    </div>
+    <p class="descriptionSpan">{{info.description}}</p>
+    
+    <button name="id" (click)="onDeleteCard(info.id)">Delete</button> 
+</div>

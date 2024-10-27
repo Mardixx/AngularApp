@@ -1,0 +1,35 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20em;
+    height: 30em;
+    .descriptionSpan {
+        word-wrap: break-word;
+        overflow: auto;
+        height: 5em;
+    }
+    .genresAndReleaseDateDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        .releaseDate {
+            width: 30%;
+        }
+        .genres {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: auto;
+            width: 60%;
+            height: 3em;
+            .genre {
+                margin-right: 1em;
+            }
+        }
+    }
+    .img {
+        height: 10em;
+    }
+}

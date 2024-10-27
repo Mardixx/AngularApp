@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="header.component.css">
+<main>
+    <a href="/">Home</a>
+    <a href="">Search</a>
+    <button (click)="changeTitle('Hello')">{{ title }}</button>
+    <button [disabled]="isFormDisabled">User</button>
+    <button [attr.data-test-id]="testId">Primary CTA</button>
+    <button (click)="logInfo($event)">Event</button>
+    <span>{{totalCost}}</span>
+    @if (isAdmin) {
+        <button>Erase database</button>
+    }
+    <ul>
+        @for (ingredient of ingredients; track ingredient.name) {
+        <li>{{ingredient.quantity}} - {{ingredient.name}}</li>
+    }
+    </ul>
+    <dropzone hidden></dropzone>
+    <div dropzone hidden></div>
+    <p dropzone hidden></p>
+    
+</main>
