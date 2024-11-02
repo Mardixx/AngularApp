@@ -1,1 +1,28 @@
-
+<button class="hideButton" (click)="changeClass()">{{hideButtonText}}</button>
+<form method="post" #cardInfo="ngForm" (ngSubmit)="postCard(cardInfo)" [ngClass]="classChange ? 'visible' : 'hidden'">
+    <div class="inputField">
+        <label for="titleInput">Title: </label>
+        <input type="text" name="title" id="titleInput" ngModel>
+    </div>
+    <div class="inputField">
+        <label for="releaseDateInput">Release Date: </label>
+        <input type="date" name="releaseDate" id="releaseDateInput" ngModel>
+    </div>
+    <div class="inputField">
+        <label for="genresInput">Genres(comme-seperated): </label>
+        <input type="text" name="genres" id="genresInput" ngModel>
+    </div>
+    <div class="inputField">
+        <label for="descriptionInput">Description: </label>
+        <textarea name="description" id="descriptionInput" ngModel></textarea>
+    </div>
+    <div class="inputField">
+        <label for="photoFileInput">Photo File: </label>
+        <input type="text" name="photoFile" id="photoFileInput" ngModel>
+    </div>
+    <div class="inputField">
+        <label for="id">Id: </label>
+        <input type="number" name="photoFile" id="photoFileInput" ngModel>
+    </div>
+        <button type="submit">Add card</button>
+</form>

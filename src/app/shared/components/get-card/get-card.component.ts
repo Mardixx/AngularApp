@@ -25,11 +25,9 @@ export class GetCardComponent {
     });
   }
   onDeleteCard(id: number) {
-    console.log(id);
     return this.service.deleteCard(id) .subscribe(() => {
       this.status = 'Delete successful'
       window.location.href = "/"; 
-      console.log(this.status);
     })  
   }
 }

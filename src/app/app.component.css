@@ -5,4 +5,11 @@
   flex-direction: row;
   justify-content: space-evenly;
   width: 90%;
-}/*# sourceMappingURL=app.component.css.map */
+}
+
+app-post-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto 2em auto;
+}

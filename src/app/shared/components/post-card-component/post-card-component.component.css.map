@@ -1,1 +1,1 @@
-{"version":3,"sources":[],"names":[],"mappings":"","file":"post-card-component.component.css"}
+{"version":3,"sources":["post-card-component.component.scss","post-card-component.component.css"],"names":[],"mappings":"AAAA;EACI,aAAA;EACA,sBAAA;EACA,YAAA;EACA,UAAA;ACCJ;ADAI;EACI,aAAA;EACA,sBAAA;EACA,eAAA;EACA,WAAA;ACER;ADDQ;EACI,kBAAA;ACGZ","file":"post-card-component.component.css"}
