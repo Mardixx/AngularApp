@@ -3,7 +3,7 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { PostCardComponent } from './shared/components/post-card-component/post-card-component.component';
 import { GetCardComponent } from './shared/components/get-card/get-card.component';
-import { FormsModule } from '@angular/forms';
+import { FormControl, FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-root',

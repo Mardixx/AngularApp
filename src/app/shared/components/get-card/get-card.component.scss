@@ -56,7 +56,7 @@
     }
     .img {
         margin: 1em 4px 0 4px;
-        height: 15em;
+        max-height: 15em;
         border: inset 3px rgba(0, 0, 0, 0.411);
     }
     .deleteButton {
