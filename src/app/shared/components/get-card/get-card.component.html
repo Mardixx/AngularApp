@@ -1,6 +1,8 @@
 <div *ngFor="let info of data" class="card">
     <h3 class="title">{{info.title}}</h3>
-    <img class="img" src={{info.photoFile}} alt="Image" />
+    <div class="imgDiv">
+        <img src={{info.photoFile}} alt="Image" />
+    </div>
     <div class="genresAndReleaseDateDiv">
         <div class="genres">
             <span *ngFor="let genre of info.genres" class="genre">{{genre}}</span>
@@ -10,7 +12,9 @@
             <span class="releaseDate">{{info.releaseDate}}</span>
         </div>
     </div>
-    <p class="descriptionSpan">{{info.description}}</p>
+    <div class="descriptionSpan">
+        <p>{{info.description}}</p>
+    </div>
     
     <button name="deleteButton" class="deleteButton" (click)="onDeleteCard(info.id)">Delete</button> 
 </div>

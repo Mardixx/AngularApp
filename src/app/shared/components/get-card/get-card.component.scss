@@ -54,10 +54,17 @@
             }
         }
     }
-    .img {
-        margin: 1em 4px 0 4px;
-        max-height: 15em;
-        border: inset 3px rgba(0, 0, 0, 0.411);
+    .imgDiv {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 1em 4px 1em 4px;
+        height: 15em;
+        img {
+            max-height: 100%;
+            width: 100%;
+            border: inset 3px rgba(0, 0, 0, 0.411);
+        }
     }
     .deleteButton {
         display: block;
