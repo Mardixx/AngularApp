@@ -2,23 +2,28 @@
 <form method="post" #cardInfo="ngForm" (ngSubmit)="postCard(cardInfo)" (input)="onInput($event)" [ngClass]="classChange ? 'visible' : 'hidden'">
     <div class="inputField">
         <label for="titleInput">Title: </label>
-        <input type="text" name="title" id="titleInput" ngModel>
+        <input type="text" name="title" id="titleInput" formGroupName="title" ngModel required>
+        <span class="helpBlock">Cannot be empty.</span>
     </div>
     <div class="inputField">
-        <label for="photoFileInput">Photo File (16:9 recommended): </label>
-        <input type="file" name="photoFile" id="photoFileInput" [ngModel]="imgURL">
+        <label for="photoFileInput">Photo File: </label>
+        <input type="file" name="photoFile" id="photoFileInput" [(ngModel)]="imgURL" required>
+        <span class="helpBlock">16:9 recommended, cannot be empty.</span>
     </div>
     <div class="inputField">
-        <label for="genresInput">Genres(comme-seperated): </label>
-        <input type="text" name="genres" id="genresInput" ngModel>
+        <label for="genresInput">Genres(comma-seperated): </label>
+        <input type="text" name="genres" id="genresInput" ngModel required>
+        <span class="helpBlock">Cannot be empty.</span>
     </div>
     <div class="inputField">
         <label for="releaseDateInput">Release Date: </label>
-        <input type="date" name="releaseDate" id="releaseDateInput" ngModel>
+        <input type="date" name="releaseDate" id="releaseDateInput" ngModel required>
+        <span class="helpBlock">Cannot be empty and must be in the past.</span>
     </div>
     <div class="inputField">
         <label for="descriptionInput">Description: </label>
-        <textarea name="description" id="descriptionInput" ngModel></textarea>
+        <textarea name="description" id="descriptionInput" minlength="15" minlength="2500" ngModel></textarea>
+        <span class="helpBlock">Must be at least 15 characters and not more than 2500 characters.</span>
     </div>
     <button type="submit">Add card</button>
 </form>

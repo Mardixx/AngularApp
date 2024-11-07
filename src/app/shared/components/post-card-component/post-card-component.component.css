@@ -17,10 +17,17 @@ form {
   background-color: #8d8c8c;
 }
 
+form .helpBlock {
+  color: black;
+  font-style: italic;
+  font-size: 1rem;
+}
+
 form .inputField {
   display: flex;
   flex-direction: column;
   width: 100%;
+  margin: 1em 0 1em 0;
 }
 
 form .inputField label {
@@ -37,7 +44,6 @@ form .inputField input {
   background-color: grey;
   border: groove 3px black;
   padding: 10px;
-  margin-bottom: 2em;
   color: white;
 }
 
@@ -49,7 +55,6 @@ form .inputField textarea {
   background-color: grey;
   border: groove 3px black;
   background-color: grey;
-  margin-bottom: 2em;
   color: white;
 }
 

@@ -13,10 +13,16 @@ form {
     border-radius: 32px;
     padding: 2em;
     background-color: rgb(141, 140, 140);
+    .helpBlock {
+        color: black;
+        font-style: italic;
+        font-size: 1rem;
+    }
     .inputField {
         display: flex;
         flex-direction: column;
         width: 100%;
+        margin: 1em 0 1em 0;
         label {
             width: fit-content;
             padding: 2px;
@@ -30,7 +36,6 @@ form {
             background-color: grey;
             border: groove 3px black;
             padding: 10px;
-            margin-bottom: 2em;
             color: white;
         }
         textarea {
@@ -41,7 +46,6 @@ form {
             background-color: grey;
             border: groove 3px black;
             background-color: grey;
-            margin-bottom: 2em;
             color: white;
         }
     }
