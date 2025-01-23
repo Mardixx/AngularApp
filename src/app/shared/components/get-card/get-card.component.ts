@@ -27,7 +27,7 @@ export class GetCardComponent {
   onDeleteCard(id: number) {
     return this.service.deleteCard(id) .subscribe(() => {
       this.status = 'Delete successful'
-      window.location.href = "/"; 
+      window.location.reload();
     })  
   }
 }
