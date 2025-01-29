@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: 2em auto 2em auto;
+    width: 80%;
     .hideButton {
         width: fit-content;
         height: 3em;
@@ -13,7 +14,7 @@
     form {
         display: flex;
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         border: groove 3px black;
         border-radius: 32px;
         padding: 2em;
