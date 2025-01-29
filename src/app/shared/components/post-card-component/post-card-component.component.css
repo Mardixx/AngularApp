@@ -1,4 +1,5 @@
 .hideButton {
+  width: -moz-fit-content;
   width: fit-content;
   height: 3em;
 }
@@ -14,31 +15,28 @@ form {
   border: groove 3px black;
   border-radius: 32px;
   padding: 2em;
-  background-color: #8d8c8c;
+  background-color: rgb(141, 140, 140);
 }
-
 form .helpBlock {
   color: black;
   font-style: italic;
   font-size: 1rem;
 }
-
 form .inputField {
   display: flex;
   flex-direction: column;
   width: 100%;
   margin: 1em 0 1em 0;
 }
-
 form .inputField label {
+  width: -moz-fit-content;
   width: fit-content;
   padding: 2px;
   border-radius: 7px;
-  border: outset 4px #9e9d9d;
+  border: outset 4px rgb(158, 157, 157);
   background-color: aliceblue;
   margin-bottom: 1em;
 }
-
 form .inputField input {
   border-radius: 7px;
   background-color: grey;
@@ -46,7 +44,6 @@ form .inputField input {
   padding: 10px;
   color: white;
 }
-
 form .inputField textarea {
   max-width: 100%;
   min-width: 100%;
@@ -57,9 +54,9 @@ form .inputField textarea {
   background-color: grey;
   color: white;
 }
-
 form button {
   margin: auto;
+  width: -moz-fit-content;
   width: fit-content;
   padding: 1em;
-}
+}/*# sourceMappingURL=post-card-component.component.css.map */

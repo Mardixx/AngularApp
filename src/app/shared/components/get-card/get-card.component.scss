@@ -1,4 +1,4 @@
-.card {
+.container {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -9,7 +9,8 @@
     background-color: rgb(141, 140, 140);
     border: solid 5px rgb(78, 78, 78);
     text-align: center;
-    margin-bottom: 3em;
+}
+.card {
     .title{
         margin: 0 auto 0 auto;
         padding: 1rem;
@@ -66,16 +67,16 @@
             border: inset 3px rgba(0, 0, 0, 0.411);
         }
     }
-    .deleteButton {
-        display: block;
-        position: absolute;
-        border-radius: 0 0 26px 26px;
-        bottom: 0;
-        right: 0;
-        height: 3em;
-        width: 100%;
-        background-color: rgb(110, 110, 110);
-        border: none;
-        font-size: 1em;
-    }
+}
+.deleteButton {
+    display: block;
+    border-radius: 0 0 26px 26px;
+    height: 3em;
+    width: 100%;
+    background-color: rgb(110, 110, 110);
+    border: none;
+    font-size: 1em;
+}
+.deleted:hover {
+    transform: scale(0.5);
 }

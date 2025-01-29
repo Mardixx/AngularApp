@@ -1,24 +1,17 @@
 import { Component } from '@angular/core';
 import { RESTAPIService } from '../../services/RESTAPIService/restapiservice.service';
-import { FormControl, FormGroup, FormsModule, NgForm } from '@angular/forms';
+import { FormsModule, NgForm, ReactiveFormsModule } from '@angular/forms';
 import { CommonModule, NgClass } from '@angular/common';
 import { ImgbbService } from '../../services/imgbb/imgbb.service';
 
 @Component({
   selector: 'app-post-card',
-  imports: [FormsModule, NgClass, CommonModule],
+  imports: [FormsModule, NgClass, CommonModule, ReactiveFormsModule],
   templateUrl: './post-card-component.component.html',
   styleUrl: './post-card-component.component.scss',
   standalone: true
 })
 export class PostCardComponent {
-  cardForm = new FormGroup({
-    'title': new FormControl(''),
-    photoFile: new FormControl(''),
-    genres: new FormControl(''),
-    releaseDate: new FormControl(''),
-    description: new FormControl(''),
-  });
   imgURL: string = '';
   status: any = '';
   classChange: boolean = true;

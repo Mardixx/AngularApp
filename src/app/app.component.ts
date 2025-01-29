@@ -1,14 +1,14 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './shared/components/header/header.component';
 import { PostCardComponent } from './shared/components/post-card-component/post-card-component.component';
 import { GetCardComponent } from './shared/components/get-card/get-card.component';
 import { FormsModule } from '@angular/forms';
+import { SearchCardComponent } from './shared/components/search-card/search-card.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, FormsModule, GetCardComponent, PostCardComponent],
+  imports: [RouterOutlet, FormsModule, GetCardComponent, PostCardComponent, SearchCardComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

@@ -2,7 +2,7 @@
 <form method="post" #cardInfo="ngForm" (ngSubmit)="postCard(cardInfo)" (input)="onInput($event)" [ngClass]="classChange ? 'visible' : 'hidden'">
     <div class="inputField">
         <label for="titleInput">Title: </label>
-        <input type="text" name="title" id="titleInput" formGroupName="title" ngModel required>
+        <input type="text" name="title" id="titleInput" ngModel required>
         <span class="helpBlock">Cannot be empty.</span>
     </div>
     <div class="inputField">

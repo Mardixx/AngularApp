@@ -1,0 +1,21 @@
+.searchDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2em 0 2em 0;
+    label {
+        font-size: 2em;
+        margin-bottom: 1em;
+    }
+    input {
+        border-radius: 7px;
+        background-color: grey;
+        border: groove 3px black;
+        padding: 10px;
+        color: white;
+        width: 50%;
+        padding: 1em;
+        font-size: 1em;
+    }
+}

@@ -1,20 +1,21 @@
-<div *ngFor="let info of data" class="card">
-    <h3 class="title">{{info.title}}</h3>
-    <div class="imgDiv">
-        <img src={{info.photoFile}} alt="Image" />
-    </div>
-    <div class="genresAndReleaseDateDiv">
-        <div class="genres">
-            <span *ngFor="let genre of info.genres" class="genre">{{genre}}</span>
+<div *ngFor="let info of data" class="container">
+    <div class="card">
+        <h3 class="title">{{info.title}}</h3>
+        <div class="imgDiv">
+            <img src={{info.photoFile}} alt="Image" />
         </div>
-        <div class="releaseDateDiv">
-            <span>Release Date: </span>
-            <span class="releaseDate">{{info.releaseDate}}</span>
+        <div class="genresAndReleaseDateDiv">
+            <div class="genres">
+                <span *ngFor="let genre of info.genres" class="genre">{{genre}}</span>
+            </div>
+            <div class="releaseDateDiv">
+                <span>Release Date: </span>
+                <span class="releaseDate">{{info.releaseDate}}</span>
+            </div>
+        </div>
+        <div class="descriptionSpan">
+            <p>{{info.description}}</p>
         </div>
     </div>
-    <div class="descriptionSpan">
-        <p>{{info.description}}</p>
-    </div>
-    
-    <button name="deleteButton" class="deleteButton" (click)="onDeleteCard(info.id)">Delete</button> 
+    <button name="deleteButton" class="deleteButton" (click)="onDeleteCard($event, info.id)">Delete</button> 
 </div>
