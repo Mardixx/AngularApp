@@ -8,7 +8,8 @@ Clone this repository and run it locally with `npm start`, you will need to clon
 
 Note: \
 Image uploading will not work since APIKEY is now deleted. \
-Both localhosts (Front-End and Back-End) need to both be running for the app to work.
+Both localhosts (Front-End and Back-End) need to both be running for the app to work. \
+RUN npm install WHEN CLONING FRONT-END AND RUN VISUAL STUDIO CODE AS AN ADMINISTRATOR
 
 ## About me
 

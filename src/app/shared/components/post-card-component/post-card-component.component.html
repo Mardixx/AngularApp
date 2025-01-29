@@ -1,4 +1,5 @@
-<button class="hideButton" (click)="changeClass()">{{hideButtonText}}</button>
+<div class="container">
+    <button class="hideButton" (click)="changeClass()">{{hideButtonText}}</button>
 <form method="post" #cardInfo="ngForm" (ngSubmit)="postCard(cardInfo)" (input)="onInput($event)" [ngClass]="classChange ? 'visible' : 'hidden'">
     <div class="inputField">
         <label for="titleInput">Title: </label>
@@ -27,3 +28,4 @@
     </div>
     <button type="submit">Add card</button>
 </form>
+</div>
