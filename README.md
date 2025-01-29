@@ -6,7 +6,11 @@ Welcome to this collection project made with Angular for the Front-End and Sprin
 
 Clone this repository and run it locally with `npm start`, you will need to clone this repository also [`Back-End`](https://github.com/Mardixx/CardSpring) `Instructions on how to run in the repository`.
 
-Note: \
+OR
+
+[Vercel Deployment for Front-End ONLY](https://collection-5rh778cxu-kimis-projects.vercel.app)
+
+Notes: \
 Image uploading will not work since APIKEY is now deleted. \
 Both localhosts (Front-End and Back-End) need to both be running for the app to work. \
 RUN npm install WHEN CLONING FRONT-END AND RUN VISUAL STUDIO CODE AS AN ADMINISTRATOR
