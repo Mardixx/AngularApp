@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { GetCardComponent } from '../get-card/get-card.component';
+import { FormControl, FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-search-card',

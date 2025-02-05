@@ -15,7 +15,12 @@ export class RESTAPIService {
   };
   
   public getCards() {
-    let url = "http://localhost:8080/card";
+    let url = `http://localhost:8080/card`;
+    return this.http.get(url);
+  }
+
+  public getCardsByTitle(title: string) {
+    let url = `http://localhost:8080/card?title_like=${title}`;
     return this.http.get(url);
   }
 

@@ -1,15 +1,15 @@
-.searchDiv {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin: 2em 0 2em 0;
 }
-.searchDiv label {
+.container label {
   font-size: 2em;
   margin-bottom: 1em;
 }
-.searchDiv input {
+.container input {
   border-radius: 7px;
   background-color: grey;
   border: groove 3px black;

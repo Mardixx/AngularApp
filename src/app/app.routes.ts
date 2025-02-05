@@ -1,12 +1,12 @@
 import { Routes } from '@angular/router';
 import { AppComponent } from './app.component';
-import { SearchComponent } from './search/search.component';
 import { PostCardComponent } from './shared/components/post-card-component/post-card-component.component';
+import { SearchCardComponent } from './shared/components/search-card/search-card.component';
 
 export const routes: Routes = [
     {
         path: 'search',
-        component: SearchComponent
+        component: SearchCardComponent
     },
     {
         path: '',

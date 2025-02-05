@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RESTAPIService } from '../../services/RESTAPIService/restapiservice.service';
 import { NgFor } from '@angular/common';
-import { style } from '@angular/animations';
 
 @Component({
   selector: 'app-get-card',
@@ -13,16 +12,25 @@ import { style } from '@angular/animations';
 export class GetCardComponent {
   data: any = '';
   status: any = '';
+  title: any = '';
 
   constructor(private service: RESTAPIService) {}
 
   ngOnInit(): void {
     this.onGetCard();
+    this.onGetCardsByTitle();
   }
 
   public onGetCard() {
     return this.service.getCards().subscribe(data =>{
       this.data = data;
+    });
+  }
+
+  public onGetCardsByTitle() {
+    this.service.getCardsByTitle(this.title).subscribe((data) => {
+      this.title = data;
+      console.log(this.title);
     });
   }
   
