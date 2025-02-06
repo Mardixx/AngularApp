@@ -1,5 +1,33 @@
-
-<div class="container">
+<div class="searchContainer">
     <label for="searchBar">Search:</label>
-    <input type="text" name="searchBar">
+    <input (keyup)="onGetCard()" [(ngModel)]="title" type="text" name="searchBar">
 </div>
+@if (title.length > 0) {
+    <div class="cardsContainer">
+        @for (info of data; track $index) {
+            @if (info.title.includes(title)) {
+                <div class="cardContainer">
+                    <div class="card">
+                        <h3 class="title">{{info.title}}</h3>
+                        <div class="imgDiv">
+                            <img src={{info.photoFile}} alt="Image" />
+                        </div>
+                        <div class="genresAndReleaseDateDiv">
+                            <div class="genres">
+                                <span *ngFor="let genre of info.genres" class="genre">{{genre}}</span>
+                            </div>
+                            <div class="releaseDateDiv">
+                                <span>Release Date: </span>
+                                <span class="releaseDate">{{info.releaseDate}}</span>
+                            </div>
+                        </div>
+                        <div class="descriptionSpan">
+                            <p>{{info.description}}</p>
+                        </div>
+                    </div>
+                    <button name="deleteButton" class="deleteButton" (click)="onDeleteCard($event, info.id)">Delete</button> 
+                </div>
+            }
+        } 
+    </div>
+}
