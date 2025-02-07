@@ -34,12 +34,12 @@ export class SearchCardComponent {
       }
     );
 
-    await delay(400);
+    await delay(350);
 
     return this.service.deleteCard(id) .subscribe(() => {
       this.status = 'Delete successful'
       this.onGetCard();
-      // window.location.reload();
+      window.location.reload();
     })
   }
 }
