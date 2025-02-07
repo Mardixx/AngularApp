@@ -1,11 +1,13 @@
-<div class="searchContainer">
-    <label for="searchBar">Search:</label>
-    <input (keyup)="onGetCard()" [(ngModel)]="title" type="text" name="searchBar">
-</div>
-@if (title.length > 0) {
-    <div class="cardsContainer">
+<div class="container">
+    <div class="searchContainer">
+        <label for="searchBar">Search:</label>
+        <input (keyup)="onGetCard()" [(ngModel)]="title" type="text" name="searchBar" placeholder="Search for a name...">
+    </div>
+    @if (title.length > 0) {
+        <span class="searchAreaText">Search Area:</span>
+        <div class="cardsContainer">
         @for (info of data; track $index) {
-            @if (info.title.includes(title)) {
+            @if (info.title.toLowerCase().includes(title.toLowerCase())) {
                 <div class="cardContainer">
                     <div class="card">
                         <h3 class="title">{{info.title}}</h3>
@@ -27,7 +29,8 @@
                     </div>
                     <button name="deleteButton" class="deleteButton" (click)="onDeleteCard($event, info.id)">Delete</button> 
                 </div>
-            }
-        } 
-    </div>
-}
+            }  
+        }
+        </div>
+    }
+</div>

@@ -1,15 +1,25 @@
-.searchContainer {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container .searchAreaText {
+  font-size: 2em;
+}
+.container .searchContainer {
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
   margin: 2em 0 2em 0;
 }
-.searchContainer label {
+.container .searchContainer label {
   font-size: 2em;
   margin-bottom: 1em;
 }
-.searchContainer input {
+.container .searchContainer input {
   border-radius: 7px;
   background-color: grey;
   border: groove 3px black;
@@ -19,30 +29,41 @@
   padding: 1em;
   font-size: 1em;
 }
-
-.cardsContainer {
+.container .searchContainer ::-moz-placeholder {
+  color: darkgrey;
+}
+.container .searchContainer ::placeholder {
+  color: darkgrey;
+}
+.container .cardsContainer {
   margin: 1rem auto 1rem auto;
   display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  overflow-x: scroll;
   justify-content: space-evenly;
+  align-items: center;
+  flex-direction: row;
   width: 90%;
+  min-height: 40rem;
+  max-height: 40rem;
+  border: 10px ridge rgba(114, 113, 113, 0.377);
 }
-
-.cardContainer {
+.container .cardContainer {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  width: 25em;
+  width: 35em;
   min-height: 35em;
   border-radius: 32px;
   background-color: rgb(141, 140, 140);
   border: solid 5px rgb(78, 78, 78);
   text-align: center;
+  margin: auto 2rem;
 }
-
-.card .title {
+.container .card {
+  width: 35em;
+}
+.container .card .title {
   margin: 0 auto 0 auto;
   padding: 1rem;
   max-width: 80%;
@@ -53,7 +74,7 @@
   word-wrap: break-word;
   word-break: normal;
 }
-.card .descriptionSpan {
+.container .card .descriptionSpan {
   margin: auto;
   width: 95%;
   word-wrap: break-word;
@@ -63,7 +84,7 @@
   margin-bottom: 3em;
   margin-top: 1em;
 }
-.card .genresAndReleaseDateDiv {
+.container .card .genresAndReleaseDateDiv {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -71,11 +92,11 @@
   margin: auto;
   width: 90%;
 }
-.card .genresAndReleaseDateDiv .releaseDateDiv {
+.container .card .genresAndReleaseDateDiv .releaseDateDiv {
   width: 35%;
   border-left: solid 2px rgba(83, 83, 83, 0.397);
 }
-.card .genresAndReleaseDateDiv .genres {
+.container .card .genresAndReleaseDateDiv .genres {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -83,23 +104,22 @@
   width: 55%;
   height: 3em;
 }
-.card .genresAndReleaseDateDiv .genres .genre {
+.container .card .genresAndReleaseDateDiv .genres .genre {
   margin-right: 1em;
 }
-.card .imgDiv {
+.container .card .imgDiv {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 1em 4px 1em 4px;
   height: 15em;
 }
-.card .imgDiv img {
+.container .card .imgDiv img {
   max-height: 100%;
   width: 100%;
   border: inset 3px rgba(0, 0, 0, 0.411);
 }
-
-.deleteButton {
+.container .deleteButton {
   display: block;
   border-radius: 0 0 26px 26px;
   height: 3em;
@@ -108,7 +128,6 @@
   border: none;
   font-size: 1em;
 }
-
-.deleted:hover {
+.container .deleted:hover {
   transform: scale(0.5);
 }/*# sourceMappingURL=search-card.component.css.map */

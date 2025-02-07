@@ -18,11 +18,6 @@ export class RESTAPIService {
     return this.http.get(url);
   }
 
-  public getCardsByTitle(title: string) {
-    let url = `http://localhost:8080/card?title_like=${title}`;
-    return this.http.get(url);
-  }
-
   public deleteCard(id: number) {
     let url = "http://localhost:8080/card/" + id;    
     return this.http.delete(url);

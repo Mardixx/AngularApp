@@ -17,16 +17,9 @@ export class SearchCardComponent {
   
   constructor(private service: RESTAPIService) {}
 
-  public onGetCardsByTitle() {
-    
-    this.service.getCardsByTitle(this.title).subscribe(() => {
-      console.log(this.title);      
-    });
-  }
   public onGetCard() {
     return this.service.getCards().subscribe(data =>{
       this.data = data;
-      
     });
   }
   async onDeleteCard(e: Event, id: number) {
@@ -46,6 +39,7 @@ export class SearchCardComponent {
     return this.service.deleteCard(id) .subscribe(() => {
       this.status = 'Delete successful'
       this.onGetCard();
+      // window.location.reload();
     })
   }
 }
