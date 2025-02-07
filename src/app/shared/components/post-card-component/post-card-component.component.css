@@ -9,6 +9,7 @@
   width: -moz-fit-content;
   width: fit-content;
   height: 3em;
+  margin-bottom: 2rem;
 }
 .container .hidden {
   display: none;

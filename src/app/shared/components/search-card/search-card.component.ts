@@ -34,7 +34,7 @@ export class SearchCardComponent {
       }
     );
 
-    await delay(350);
+    await delay(300);
 
     return this.service.deleteCard(id) .subscribe(() => {
       this.status = 'Delete successful'
