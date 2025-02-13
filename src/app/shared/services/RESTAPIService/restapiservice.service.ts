@@ -24,7 +24,7 @@ export class RESTAPIService {
   }
 
   public addCard(info: any) {
-    let url = "http://localhost:8080/card";    
+    let url = "http://localhost:8080/card";
     return this.http.post(url, info);
   }
 }

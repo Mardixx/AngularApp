@@ -1,4 +1,8 @@
 <div class="container">
+    <div class="titleDiv">
+        <span class="title">Anime Card Collection</span>
+        <span class="infoBox" (mouseenter)="changeText()" (mouseleave)="changeText()">{{information}}</span>
+    </div>
     <button class="hideButton" (click)="changeClass()">{{hideButtonText}}</button>
 <form method="post" #cardInfo="ngForm" (ngSubmit)="postCard(cardInfo)" (input)="onInput($event)" [ngClass]="classChange ? 'visible' : 'hidden'">
     <div class="inputField">

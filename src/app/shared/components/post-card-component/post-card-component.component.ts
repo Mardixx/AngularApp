@@ -16,6 +16,7 @@ export class PostCardComponent {
   status: any = '';
   classChange: boolean = true;
   hideButtonText: string = "Hide Form";
+  information: any = '🛈';
 
   constructor(private service: RESTAPIService, private readonly imgbbService: ImgbbService) {}
 
@@ -44,6 +45,14 @@ export class PostCardComponent {
       this.hideButtonText = "Show Form";
     } else {
       this.hideButtonText = "Hide Form";
+    }
+  }
+  changeText() {
+    if (this.information == '🛈') {
+      this.information = 'Help';
+    }
+    else {
+      this.information = '🛈';
     }
   }
 }
