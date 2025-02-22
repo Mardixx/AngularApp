@@ -34,13 +34,6 @@
     text-shadow: 2px 3px 2px black, 2.5px 3.5px 3px white;
   }
 }
-.container .infoBox {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 1.5em;
-  color: darkgray;
-}
 .container .hidden {
   display: none;
 }

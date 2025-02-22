@@ -1,15 +1,10 @@
 import { Routes } from '@angular/router';
-import { AppComponent } from './app.component';
 import { PostCardComponent } from './shared/components/post-card-component/post-card-component.component';
-import { SearchCardComponent } from './shared/components/search-card/search-card.component';
+import { HelpPageComponent } from './shared/components/help-page/help-page.component';
 
 export const routes: Routes = [
     {
-        path: 'search',
-        component: SearchCardComponent
+        path: 'help',
+        component: HelpPageComponent
     },
-    {
-        path: '',
-        component: PostCardComponent
-    }
 ];

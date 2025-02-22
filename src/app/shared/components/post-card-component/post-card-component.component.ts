@@ -14,9 +14,8 @@ import { ImgbbService } from '../../services/imgbb/imgbb.service';
 export class PostCardComponent {
   imgURL: string = '';
   status: any = '';
-  classChange: boolean = true;
+  classChangeForm: boolean = true;
   hideButtonText: string = "Hide Form";
-  information: any = '🛈';
 
   constructor(private service: RESTAPIService, private readonly imgbbService: ImgbbService) {}
 
@@ -39,20 +38,12 @@ export class PostCardComponent {
       window.location.reload();
     })
   }
-  changeClass() {
-    this.classChange = !this.classChange;
+  changeClassForm() {
+    this.classChangeForm = !this.classChangeForm;
     if (this.hideButtonText == "Hide Form") {
       this.hideButtonText = "Show Form";
     } else {
       this.hideButtonText = "Hide Form";
-    }
-  }
-  changeText() {
-    if (this.information == '🛈') {
-      this.information = 'Help';
-    }
-    else {
-      this.information = '🛈';
     }
   }
 }

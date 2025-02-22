@@ -1,0 +1,19 @@
+.infoBox {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  font-size: 1.5em;
+  color: darkgray;
+}
+
+.infoBox:hover {
+  cursor: pointer;
+}
+
+.showHelp {
+  display: block;
+}
+
+.hideHelp {
+  display: none;
+}/*# sourceMappingURL=help-page.component.css.map */
