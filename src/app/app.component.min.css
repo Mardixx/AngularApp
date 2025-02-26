@@ -1,1 +1,1 @@
-*{scroll-behavior:smooth}.cards{margin:auto;display:flex;flex-wrap:wrap;flex-direction:row;justify-content:space-evenly;width:90%}
+*{scroll-behavior:smooth}.cards{margin:auto;display:flex;flex-wrap:wrap;flex-direction:row;justify-content:space-evenly;width:90%}.redirectPortfolio{position:static;bottom:10px;left:10px;color:white}.redirectPortfolio a{color:grey}

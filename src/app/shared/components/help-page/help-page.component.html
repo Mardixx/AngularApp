@@ -1,4 +1,14 @@
 <span class="infoBox" (click)="changeClassHelp()">🛈</span>
 <div [ngClass]="classChangeHelp ? 'hideHelp' : 'showHelp'">
-    <span>This is a small help to guide you through how to create a card.</span>
+    <div class="text">
+        <span>This is a small help to guide you through how to create a card.</span><br />
+        <span>There are multiple steps to add a card: </span>
+        <ul>
+            <li>First we have the 'Title'. A simple text field to add the title you would like.</li>
+            <li>Second we have the 'Photo File'. Simply add a png.</li>
+            <li>Third we have the 'Genres'. You can add the different genres seperated by commas.</li>
+            <li>Fourth we have the 'Release Date'. Simply add the release date you desire.</li>
+            <li>Fifth we have the 'Description'. Add the description you would like on the card.</li>
+        </ul>
+    </div>
 </div>
