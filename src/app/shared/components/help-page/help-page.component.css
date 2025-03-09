@@ -1,42 +1,90 @@
-.infoBox {
-  position: absolute;
-  top: 0;
-  right: 10px;
-  font-size: 1.5em;
-  color: darkgray;
+@media screen and (min-width: 600px) {
+  .infoBox {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 1.5em;
+    color: darkgray;
+  }
+  .infoBox:hover {
+    cursor: pointer;
+  }
+  .showHelp {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .showHelp .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.1);
+    box-shadow: 3px 2px 6px grey, -3px -2px 6px #444444;
+    border-radius: 32px 32px 32px 32px;
+    padding: 2rem;
+    width: 45%;
+  }
+  .showHelp .text ul {
+    margin: 0;
+  }
+  .showHelp .text ul li {
+    height: 2rem;
+    margin-top: 1rem;
+  }
+  .hideHelp {
+    display: none;
+  }
 }
 
-.infoBox:hover {
-  cursor: pointer;
+@media screen and (max-width: 600px) {
+  .infoBox {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 1em;
+    color: darkgray;
+  }
+  .infoBox:hover {
+    cursor: pointer;
+  }
+  .showHelp {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  .showHelp .text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.1);
+    box-shadow: 3px 2px 6px grey, -3px -2px 6px #444444;
+    border-radius: 32px 32px 32px 32px;
+    padding: 2rem;
+    width: 76%;
+  }
+  .showHelp .text h3 {
+    font-size: 3.5vw;
+  }
+  .showHelp .text span {
+    font-size: 3vw;
+  }
+  .showHelp .text ul {
+    margin: 0;
+    width: 100%;
+  }
+  .showHelp .text ul li {
+    height: 2rem;
+    margin-top: 1rem;
+    font-size: 3vw;
+  }
+  .hideHelp {
+    display: none;
+  }
 }
-
-.showHelp {
-  display: flex;
-  color: white;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 1rem;
-}
-.showHelp .text {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(128, 128, 128, 0.1);
-  box-shadow: 3px 2px 6px grey, -3px -2px 6px rgb(68, 68, 68);
-  border-radius: 32px 32px 32px 32px;
-  padding: 2rem;
-  width: 45%;
-}
-.showHelp .text ul {
-  margin: 0;
-}
-.showHelp .text ul li {
-  height: 2rem;
-  margin-top: 1rem;
-}
-
-.hideHelp {
-  display: none;
-}/*# sourceMappingURL=help-page.component.css.map */

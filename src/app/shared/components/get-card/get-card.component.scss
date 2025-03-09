@@ -1,82 +1,171 @@
-.container {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 25em; 
-    min-height: 35em;
-    border-radius: 32px;
-    background-color: rgb(141, 140, 140);
-    border: solid 5px rgb(78, 78, 78);
-    text-align: center;
-}
-.card {
-    .title{
-        margin: 0 auto 0 auto;
-        padding: 1rem;
-        max-width: 80%;
-        min-width: 80%;
-        border-radius: 0 0 16px 16px;
-        color: rgb(250, 250, 250);
-        background-color: rgba(216, 53, 53, 0.897);
-        word-wrap: break-word;
-        word-break: normal;
-    }
-    .descriptionSpan {
-        margin: auto;
-        width: 95%;
-        word-wrap: break-word;
-        overflow: auto;
-        height: 5em;
-        padding-bottom: 1em;
-        margin-bottom: 3em;
-        margin-top: 1em;
-    }
-    .genresAndReleaseDateDiv {
+@media screen and (min-width: 600px) {
+    .container {
+        position: relative;
         display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-evenly;
-        margin: auto;
-        width: 90%;
-        .releaseDateDiv {
-            width: 35%;
-            border-left: solid 2px rgba(83, 83, 83, 0.397);
+        flex-direction: column;
+        justify-content: space-between;
+        width: 25em; 
+        min-height: 35em;
+        border-radius: 32px;
+        background-color: rgb(141, 140, 140);
+        border: solid 5px rgb(78, 78, 78);
+        text-align: center;
+    }
+    .card {
+        .title{
+            margin: 0 auto 0 auto;
+            padding: 1rem;
+            max-width: 80%;
+            min-width: 80%;
+            border-radius: 0 0 16px 16px;
+            color: rgb(250, 250, 250);
+            background-color: rgba(216, 53, 53, 0.897);
+            word-wrap: break-word;
+            word-break: normal;
         }
-        .genres {
+        .descriptionSpan {
+            margin: auto;
+            width: 95%;
+            word-wrap: break-word;
+            overflow: auto;
+            height: 5em;
+            padding-bottom: 1em;
+            margin-bottom: 3em;
+            margin-top: 1em;
+        }
+        .genresAndReleaseDateDiv {
             display: flex;
             flex-direction: row;
             align-items: center;
-            overflow: auto;
-            width: 55%;
-            height: 3em;
-            .genre {
-                margin-right: 1em;
+            justify-content: space-evenly;
+            margin: auto;
+            width: 90%;
+            .releaseDateDiv {
+                width: 35%;
+                border-left: solid 2px rgba(83, 83, 83, 0.397);
+            }
+            .genres {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                overflow: auto;
+                width: 55%;
+                height: 3em;
+                .genre {
+                    margin-right: 1em;
+                }
+            }
+        }
+        .imgDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em 4px 1em 4px;
+            height: 15em;
+            img {
+                max-height: 100%;
+                width: 100%;
+                border: inset 3px rgba(0, 0, 0, 0.411);
             }
         }
     }
-    .imgDiv {
+    .deleteButton {
+        display: block;
+        border-radius: 0 0 26px 26px;
+        height: 3em;
+        width: 100%;
+        background-color: rgb(110, 110, 110);
+        border: none;
+        font-size: 1em;
+    }
+    .deleted:hover {
+        transform: scale(0.5);
+    }    
+}
+@media screen and (max-width: 600px) {
+    .container {
+        position: relative;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 1em 4px 1em 4px;
-        height: 15em;
-        img {
-            max-height: 100%;
-            width: 100%;
-            border: inset 3px rgba(0, 0, 0, 0.411);
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 1em;
+        width: 95%; 
+        min-height: 35em;
+        border-radius: 32px;
+        background-color: rgb(141, 140, 140);
+        border: solid 5px rgb(78, 78, 78);
+        text-align: center;
+    }
+    .card {
+        .title{
+            margin: 0 auto 0 auto;
+            padding: 1rem;
+            width: 70%;
+            border-radius: 0 0 16px 16px;
+            color: rgb(250, 250, 250);
+            background-color: rgba(216, 53, 53, 0.897);
+            word-wrap: break-word;
+            word-break: normal;
+            font-size: 4vw;
+        }
+        .descriptionSpan {
+            margin: auto;
+            max-width: 95%;
+            word-wrap: break-word;
+            overflow: auto;
+            height: 5em;
+            padding-bottom: 1em;
+            margin-bottom: 3em;
+            margin-top: 1em;
+            font-size: 3vw;
+        }
+        .genresAndReleaseDateDiv {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-evenly;
+            margin: auto;
+            font-size: 3vw;
+            width: 90%;
+            .releaseDateDiv {
+                width: 35%;
+                border-left: solid 2px rgba(83, 83, 83, 0.397);
+            }
+            .genres {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                overflow: auto;
+                width: 55%;
+                height: 3em;
+                .genre {
+                    margin-right: 1em;
+                }
+            }
+        }
+        .imgDiv {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 1em 4px 1em 4px;
+            height: 15em;
+            img {
+                max-height: 100%;
+                width: 100%;
+                border: inset 3px rgba(0, 0, 0, 0.411);
+            }
         }
     }
-}
-.deleteButton {
-    display: block;
-    border-radius: 0 0 26px 26px;
-    height: 3em;
-    width: 100%;
-    background-color: rgb(110, 110, 110);
-    border: none;
-    font-size: 1em;
-}
-.deleted:hover {
-    transform: scale(0.5);
+    .deleteButton {
+        display: block;
+        border-radius: 0 0 26px 26px;
+        height: 3em;
+        width: 100%;
+        background-color: rgb(110, 110, 110);
+        border: none;
+        font-size: 1em;
+    }
+    .deleted:hover {
+        transform: scale(0.5);
+    }    
 }

@@ -1,3 +1,4 @@
+@media screen and (min-width: 600px){
 .container {
     display: flex;
     flex-direction: column;
@@ -12,7 +13,7 @@
         border-radius: 1em 4px 1em 4px;
         padding: 0em 1em 0em 1em;
     }
-    @media screen and (min-width: 600px){
+    
         .titleDiv {
             display: flex;
             flex-direction: row;
@@ -32,7 +33,7 @@
             }
             
         }
-    }
+    
     .hidden{ 
         display: none;
     }
@@ -90,27 +91,105 @@
         }
     }
 }
+}
 @media screen and (max-width: 600px) {
-    .titleDiv {
-        position: static;
+    .container {
         display: flex;
-        flex-direction: row;
-        background-color: rgba(128, 128, 128, 0.1);
-        font-size: 4vw;
-        width: 75%;
-        height: 2.5em;
-        text-align: center;
+        flex-direction: column;
         align-items: center;
-        color: white;
-        font-family: cursive;
-        box-shadow: 3px 2px 6px grey, -3px -2px 6px rgb(68, 68, 68);
-        border-radius: 32px 8px 32px 8px;
-        .title {
-            width: 100%;
-            text-shadow: 2px 3px 2px black, 2.5px 3.5px 3px white;
+        margin: 1em auto 0 auto;
+        width: 90%;
+        font-size: 1.3em;
+        .hideButton {
+            width: fit-content;
+            height: 3em;
+            margin: 2rem 0 2rem 0;
+            border-radius: 1em 4px 1em 4px;
+            padding: 0em 1em 0em 1em;
+            font-size: 2.5vw;
         }
-        .infoBox {
-            font-size: 1em;
+        .titleDiv {
+            position: static;
+            display: flex;
+            flex-direction: row;
+            background-color: rgba(128, 128, 128, 0.1);
+            font-size: 4vw;
+            width: 75%;
+            height: 2.5em;
+            text-align: center;
+            align-items: center;
+            color: white;
+            font-family: cursive;
+            box-shadow: 3px 2px 6px grey, -3px -2px 6px rgb(68, 68, 68);
+            border-radius: 32px 8px 32px 8px;
+            .title {
+                width: 100%;
+                text-shadow: 2px 3px 2px black, 2.5px 3.5px 3px white;
+            }
+            .infoBox {
+                font-size: 1em;
+            }
+        }
+        .hidden{ 
+            display: none;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            border: groove 3px black;
+            border-radius: 32px;
+            padding: 1em;
+            background-color: rgb(141, 140, 140);
+            .helpBlock {
+                color: black;
+                font-style: italic;
+                font-size: 3vw;
+            }
+            .inputField {
+                display: flex;
+                flex-direction: column;
+                width: 100%;
+                margin: 0.5em 0 0.5em 0;
+                label {
+                    width: fit-content;
+                    padding: 2px;
+                    border-radius: 7px;
+                    border: outset 4px rgb(158, 157, 157);
+                    background-color: aliceblue;
+                    margin-bottom: 1em;
+                    font-size: 3vw;
+                }
+                input {
+                    border-radius: 7px;
+                    background-color: grey;
+                    border: groove 3px black;
+                    padding: 10px;
+                    color: white;
+                    border-radius: 1em 4px 1em 4px;
+                    font-size: 2vw;
+
+                }
+                textarea {
+                    max-width: 100%;
+                    min-width: 100%;
+                    height: 5em;
+                    border-radius: 0px 10px 0px 10px;
+                    background-color: grey;
+                    border: groove 3px black;
+                    background-color: grey;
+                    color: white;
+                }
+            }
+            button {
+                margin: 1em auto auto auto;
+                width: fit-content;
+                height: 3em;
+                border-radius: 1em 4px 1em 4px;
+                padding: 0em 1em 0em 1em;
+                font-size: 2.5vw;
+            }
         }
     }
+    
 }
