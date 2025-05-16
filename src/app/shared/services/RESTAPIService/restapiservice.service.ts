@@ -13,34 +13,34 @@ export class RESTAPIService {
     })
   };
 
-  // public getCards() {
-  //   let url = `localhost:8080/card`;
-  //   return this.http.get(url);
-  // }
-
-  // public deleteCard(id: number) {
-  //   let url = "localhost:8080/card/" + id;    
-  //   return this.http.delete(url);
-  // }
-
-  // public addCard(info: any) {
-  //   let url = "localhost:8080/card";
-  //   return this.http.post(url, info);
-  // }
-  
   public getCards() {
-    let url = `http://page-allergy.gl.at.ply.gg:21180/card`;
+    let url = `http://localhost:8080/card`;
     return this.http.get(url);
   }
 
   public deleteCard(id: number) {
-    let url = "http://page-allergy.gl.at.ply.gg:21180/card/" + id;    
+    let url = "http://localhost:8080/card/" + id;    
     return this.http.delete(url);
   }
 
   public addCard(info: any) {
-    let url = "http://page-allergy.gl.at.ply.gg:21180/card";
+    let url = "http://localhost:8080/card";
     return this.http.post(url, info);
   }
+  
+  // public getCards() {
+  //   let url = `http://page-allergy.gl.at.ply.gg:21180/card`;
+  //   return this.http.get(url);
+  // }
+
+  // public deleteCard(id: number) {
+  //   let url = "http://page-allergy.gl.at.ply.gg:21180/card/" + id;    
+  //   return this.http.delete(url);
+  // }
+
+  // public addCard(info: any) {
+  //   let url = "http://page-allergy.gl.at.ply.gg:21180/card";
+  //   return this.http.post(url, info);
+  // }
   
 }

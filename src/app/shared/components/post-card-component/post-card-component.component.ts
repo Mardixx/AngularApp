@@ -22,14 +22,16 @@ export class PostCardComponent {
   onInput(e: Event) {
     let input = e.target as HTMLInputElement;
 
-    if (input.files) {
-      this.imgbbService.upload(input.files[0]).subscribe(url => this.imgURL = url);
+    if (this.imgbbService.apiKey != 'this is where the apikey is supposed to be') {
+      if (input.files) {
+        this.imgbbService.upload(input.files[0]).subscribe(url => this.imgURL = url);
+      }
     }
   }
 
   postCard(info: NgForm) {
     let genres: string = info.value.genres;
-    info.value.genres = genres.split(",")
+    info.value.genres = genres.split(",");
     console.log(genres);
 
     return this.service.addCard(info.value).subscribe(() => {

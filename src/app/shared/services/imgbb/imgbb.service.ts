@@ -7,7 +7,7 @@ import { map } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class ImgbbService {
-  private readonly apiKey: string = 'this is where the apikey is supposed to be';
+  public readonly apiKey: string = 'this is where the apikey is supposed to be';
 
   constructor(private readonly httpClient : HttpClient) { }
 
